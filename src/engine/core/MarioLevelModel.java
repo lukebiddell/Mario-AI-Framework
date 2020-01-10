@@ -178,9 +178,7 @@ public class MarioLevelModel {
     public MarioLevelModel clone() {
         MarioLevelModel model = new MarioLevelModel(this.getWidth(), this.getHeight());
         for (int x = 0; x < model.getWidth(); x++) {
-            for (int y = 0; y < model.getHeight(); y++) {
-                model.map[x][y] = this.map[x][y];
-            }
+            System.arraycopy(this.map[x], 0, model.map[x], 0, model.getHeight());
         }
         return model;
     }

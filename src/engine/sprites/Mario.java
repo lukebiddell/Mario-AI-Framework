@@ -58,9 +58,7 @@ public class Mario extends MarioSprite {
         sprite.canShoot = canShoot;
         sprite.mayJump = mayJump;
         sprite.actions = new boolean[this.actions.length];
-        for (int i = 0; i < this.actions.length; i++) {
-            sprite.actions[i] = this.actions[i];
-        }
+        System.arraycopy(this.actions, 0, sprite.actions, 0, this.actions.length);
         sprite.xJumpSpeed = xJumpSpeed;
         sprite.yJumpSpeed = yJumpSpeed;
         sprite.invulnerableTime = invulnerableTime;
