@@ -67,7 +67,7 @@ public class MarioGame {
     /**
      * Create a mario game with a different forward model where the player on certain event
      *
-     * @param killPlayer events that will kill the player
+     * @param killEvents events that will kill the player
      */
     public MarioGame(MarioEvent[] killEvents) {
         this.killEvents = killEvents;
