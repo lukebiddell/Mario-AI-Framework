@@ -26,7 +26,7 @@ public interface MarioAgent {
     /**
      * Return the name of the agent that will be displayed in debug purposes
      *
-     * @return
+     * @return the name of the agent
      */
     String getAgentName();
 }
